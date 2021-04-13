@@ -15,7 +15,6 @@ import org.springframework.web.client.RestClientException;
 
 @SpringBootApplication
 public class ResttaskApplication {
-	private final String baseURL = "https://dashboard.healthit.gov/api/open-api.php";
 	private static final Logger log = LoggerFactory.getLogger(ResttaskApplication.class);
 
 	public static void main(String[] args) {
@@ -25,11 +24,8 @@ public class ResttaskApplication {
 	@Bean
 	public CommandLineRunner run(HealthStateService healthStateService) throws RestClientException{
 		return args -> {
-
 			List<StateHealth> healthRecords = healthStateService.getBasicEHR("2014", "AHA_2008-2015.csv", "region", "desc");
-			for (StateHealth stateHealth : healthRecords) {
-				System.out.println(stateHealth);
-			}
+			log.info(healthRecords.toString());
 		};
 	}
 }

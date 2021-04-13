@@ -31,7 +31,7 @@ public class HealthStateService {
         try {
             healthRecords = getHealthRecords(stateHealthArray);
         } catch (JsonProcessingException e) {
-            // TODO Auto-generated catch block
+            // TODO log errors
             e.printStackTrace();
         }
 
