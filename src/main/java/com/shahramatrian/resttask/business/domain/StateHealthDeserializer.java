@@ -1,4 +1,4 @@
-package com.shahramatrian.resttask;
+package com.shahramatrian.resttask.business.domain;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.shahramatrian.resttask;
+package com.shahramatrian.resttask.business.domain;
 
 public class StateHealth {
     private String region; // State
