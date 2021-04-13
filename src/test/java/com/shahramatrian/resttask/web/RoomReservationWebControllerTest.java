@@ -30,7 +30,7 @@ public class RoomReservationWebControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    public void getReservations() throws Exception{
+    public void getHealthRecords() throws Exception{
         List<StateHealth> healthRecords = new ArrayList<>();
         StateHealth stateHealth = new StateHealth();
         stateHealth.setRegion("Wyoming");
