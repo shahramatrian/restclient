@@ -22,7 +22,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebMvcTest(StateHealthWebController.class)
-public class RoomReservationWebControllerTest {
+public class StateHealthWebControllerTest {
     @MockBean
     private HealthStateService healthStateService;
 
